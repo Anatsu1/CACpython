@@ -1,0 +1,140 @@
+:root{
+    --bg-color:#1b2021;
+    --bg-secondary-color:#308c7d;
+    --primary-color:#1b2021;
+    --secondary-color:#514e80;
+    --third-color:#8d99ae;
+    --letter-color:#a5f2d9;
+    --body-color:#0a1641;
+    --header-bg:#373c4d;
+    --header-letter:#0f8bff;
+    --letter-hover:#60fdbc;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "alkatra";
+    background-color:var(--body-color);
+}
+
+#inicio{
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: 35%;
+}
+
+.contenedor{
+    overflow: hidden;
+    background-color: var(--primary-color);
+    background-image: url(../assets/img/fondo1.jpg);
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#reel{
+    position: relative;
+    background-image: url(../assets/img/reel5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 65vh;
+    max-width: 70vw;
+    margin: 30px 0px 10px 0px;
+    left: 4.3vw;
+    border-radius: 10px;
+    
+    animation-name: cambiar;
+    animation-duration: 25s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.contenido{
+    padding: 10px 20px 30px 20px;
+    color: white;
+}
+
+#recomendados{
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: 50%;
+    width: 100%;
+}
+
+#cartelera{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    align-items: center;
+    background-color: #000000d8;
+    display: block;
+    align-items: center;
+}
+
+.card{
+    display: inline-block;
+    max-width: 23vw;
+    height: auto;
+    width: 100%;
+    box-shadow: 4px 4px 4px 4px black;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: outset black;
+    box-sizing: border-box;
+    margin-left: 0.9vw;
+    margin-right: 0.33vw;
+}
+
+.card h4{
+    color: white;
+}
+
+.imgresponsive{
+    transition: transform 0.3s ease-in-out;
+}
+
+.imgresponsive:hover{
+    transform: scale(1.2);
+}
+
+
+.imgresponsive{
+    height: auto;
+    height: 450px;
+    width: 100%;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer div{
+    display: inline-block;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+@keyframes cambiar{
+    0%{background-image: url(../assets/img/reel1.jpg);}
+    25%{background-image: url(../assets/img/reel2.jpg);}
+    50%{background-image: url(../assets/img/reel3.jpg);}
+    75%{background-image: url(../assets/img/reel4.jpg);}
+    100%{background-image: url(../assets/img/reel5.jpg);}
+}
+
+@font-face {
+    font-family: "alkatra";
+    src: url(../assets/fonts/Alkatra/Alkatra-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "fonstar";
+    src: url(../assets/fonts/fonstars/Fonstars-4Bo0p.otf);
+}
