@@ -22,21 +22,21 @@ body{
 }
 
 #inicio{
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: 35%;
 }
 
 .contenedor{
     overflow: hidden;
     background-color: var(--primary-color);
-    background-image: url(../assets/img/fondo1.jpg);
+    background-image: url(../img/fondo1.jpg);
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
 #reel{
     position: relative;
-    background-image: url(../assets/img/reel5.jpg);
+    background-image: url(../img/reel5.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -58,7 +58,7 @@ body{
 }
 
 #recomendados{
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: 50%;
     width: 100%;
 }
@@ -122,11 +122,11 @@ footer div{
 }
 
 @keyframes cambiar{
-    0%{background-image: url(../assets/img/reel1.jpg);}
-    25%{background-image: url(../assets/img/reel2.jpg);}
-    50%{background-image: url(../assets/img/reel3.jpg);}
-    75%{background-image: url(../assets/img/reel4.jpg);}
-    100%{background-image: url(../assets/img/reel5.jpg);}
+    0%{background-image: url(../img/reel1.jpg);}
+    25%{background-image: url(../img/reel2.jpg);}
+    50%{background-image: url(../img/reel3.jpg);}
+    75%{background-image: url(../img/reel4.jpg);}
+    100%{background-image: url(../img/reel5.jpg);}
 }
 
 @font-face {
