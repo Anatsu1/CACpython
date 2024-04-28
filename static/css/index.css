@@ -21,6 +21,77 @@ body{
     background-color:var(--body-color);
 }
 
+/*Encabezado*/
+.header{grid-area: header;}
+/*Principal*/
+.main {grid-area: main;}
+/*buscador*/
+.buscador {grid-area: buscador;}
+/*informacion*/
+.info {grid-area: info;}
+/*Pie*/
+.footer {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        /*6 columnas y 4 filas*/
+        'header header header header header header'
+        'main main main main main buscador'
+        'info info info info info buscador'
+        'footer footer footer footer footer buscador';
+}
+
+.grid-container .header{
+    font-family: fonstar;
+    background-color:var(--header-bg);
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 10px;
+}
+.header div,nav{
+    margin-left: 20vw;
+    display: inline;
+    vertical-align: middle;
+}
+#icono{
+    display: inline-block;
+}
+#icono h2{
+    vertical-align: middle;
+    position: relative;
+    left: -22vw;
+    font-size: 29px;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+}
+.hipervin{
+    text-decoration: none;
+    color: var(--header-letter);
+    margin: 0 10px;
+}
+.hipervin:hover{
+    color: var(--letter-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #inicio{
     background-image: url(../img/fondo.jpg);
     background-size: 35%;
