@@ -10,31 +10,40 @@
     <title>Manarem - ¡Encuentra tus Animes, Mangas y Música!</title>
 </head>
 <body>
-    <header>
-        <div class="grid-container">
-            <h2 id="icono">Manarem</h2>
-            <a class="hipervin"  id="h_home" href="index.html">Home</a>
-            <a class="hipervin"  id="h_inicio" href="index.html#inicio">Reel</a>
-            <a class="hipervin"  id="h_recomendados" href="templates/recomend.html">Recomendados</a>
-            <a class="hipervin"  id="h_contacto" href="index.html#contacto">Contacto</a>
-            <a class="hipervin"  id="h_ingresar" href="templates/ingresar.html">Ingresar</a>
-            <a class="hipervin"  id="h_registrarse" href="templates/registrarse.html">Registrarse</a>
-        </div>
-    </header>
-    
-    <div id="main">
-        <section id="inicio">
+    <div class="grid-container">
+        <div class="header">
+            <nav>
+                <h2 id="icono">Manarem</h2>
+                <a class="hipervin"  id="h_home" href="index.html">Home</a>
+                <a class="hipervin"  id="h_inicio" href="index.html#inicio">Reel</a>
+                <a class="hipervin"  id="h_recomendados" href="templates/recomend.html">Recomendados</a>
+                <a class="hipervin"  id="h_contacto" href="index.html#contacto">Contacto</a>
+                <div class="drop_otros">
+                    <button>Otros</button>
+                    <div class="drop_otros">
+                        <a class="hipervin" href="templates/acerca_de">Acerca de</a>
+                        <a class="hipervin" href="templates/contacto">Contacto</a>
+                        <a class="hipervin" href="templates/preg_frec">Preguntas Frecuentes</a>
+                        <a class="hipervin" href="templates/feedback">Opiniones</a>
+                    </div>
+                </div> 
+                <a class="hipervin"  id="h_ingresar" href="templates/ingresar.html">Ingresar</a>
+                <a class="hipervin"  id="h_registrarse" href="templates/registrarse.html">Registrarse</a>
+            </nav>
+        </header>
+        
+        <div class="main">
             <div class="contenedor">
                 <div id="reel"></div>
-                <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio ex obcaecati sequi vel doloremque temporibus ut ratione dolore, nam blanditiis voluptate iusto sint earum! Excepturi hic labore nesciunt repellendus.
-                        Quas aliquam nesciunt, ipsa vero perferendis ducimus temporibus earum odio maiores obcaecati sapiente harum cupiditate facilis numquam optio rerum tenetur excepturi voluptas dolor, et, quia atque! Officiis odio maiores pariatur.nem voluptate quasi? Animi, porro unde?
-                        Nisi dolorem rem ipsum atque eum itaque possimus magni sint, amet perferendis optio voluptatibus unde tenetur error soluta voluptatem, at molestiae! Mollitia nemo laborum, officia beatae amet autem cupiditate quasi?
-                    </p>
-                </div>  
+                <section id="bloque-1">
+                    <h1 class="titulo">Recomendaciones de Anime y Música</h1>
+                </section>
+                
+                <section id="bloque-3">
+                    <h3 id="p-bloque3">Más Recomendados o algo parecido</h3>
+                    <h4 id="p-bloque3">Una serie de imagenes de recomendados y su titulo arriba</h4>
+                </section>
             </div>
-        </section>
-        <section id="recomendados">
             <h1>Animes y Mangas Recomendados</h1>
             <div id="cartelera">
                 <div class="card">
@@ -62,69 +71,41 @@
                     <h5>Descripción: breve del Anime/Manga</h5>
                     <h5>Link de la Página/Sitio que contiene el Manga/Anime</h5>
                 </div>
-                <div class="card">
-                    <img class="imgresponsive" src="/static/img/Pokemon.jpg" alt="">
-                    <h4>Titulo Anime/Manga de Ejemplo</h4>
-                    <h5>Descripción: breve del Anime/Manga</h5>
-                    <h5>Link de la Página/Sitio que contiene el Manga/Anime</h5>
-                </div>
-                <div class="card">
-                    <img class="imgresponsive" src="/static/img/HunterXH.jpg" alt="">
-                    <h4>Titulo Anime/Manga de Ejemplo</h4>
-                    <h5>Descripción: breve del Anime/Manga</h5>
-                    <h5>Link de la Página/Sitio que contiene el Manga/Anime</h5>
-                </div>
-                <div class="card">
-                    <img class="imgresponsive" src="/static/img/BokunDeku.jpg" alt="">
-                    <h4>Titulo Anime/Manga de Ejemplo</h4>
-                    <h5>Descripción: breve del Anime/Manga</h5>
-                    <h5>Link de la Página/Sitio que contiene el Manga/Anime</h5>
-                </div>
-                <div class="card">
-                    <img class="imgresponsive" src="/static/img/JJKai.jpg" alt="">
-                    <h4>Titulo Anime/Manga de Ejemplo</h4>
-                    <h5>Descripción: breve del Anime/Manga</h5>
-                    <h5>Link de la Página/Sitio que contiene el Manga/Anime</h5>
-                </div>
             </div>
-        <!-- </section>
-        <section id="contacto">
-
-        </section> -->
+        </div>
+    
+        <div class="buscador">
+            <section id="buscador">
+                <h3>Buscar</h3>
+            </section>
+    
+        </div>
+    
+        <div class="info">
+            <section id="bloque-4">
+                <h3 id="p-bloque3">¡Sean Bievenidos a (Nombre Página)!. Izquierdo</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página .Descripción</p>
+                <p id="p-bloque3">Nuestra meta es que puedas encontrar todos los Mangas y Animes disponibles en internet para que te sean más fáciles de encontrar. También te recomendamos música relacionada</p>
+            </section>
+    
+            <section id="bloque-4">
+                <h3 id="p-bloque3">¿Qué es un manga?. Medio</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
+                <p id="p-bloque3">Explicacón</p>
+            </section>
+    
+            <section id="bloque-4">
+                <h3 id="p-bloque3">¿Diferencia entre manga, mahua y manwhua?. Derecho</h3>
+                <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
+                <p id="p-bloque3">Explicación</p>
+            </section>
+        </div>
+    
+        <div class="footer">
+            <div>Contacto por GitHub:</div>
+            <div>creada por an4tsu y JohnCVF9</div>
+        </div>
     </div>
-
-    <div class="buscador">
-        <section id="buscador">
-            <h3>Buscar</h3>
-        </section>
-
-    </div>
-
-    <div class="info">
-        <section id="bloque-4">
-            <h3 id="p-bloque3">¡Sean Bievenidos a (Nombre Página)!. Izquierdo</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página .Descripción</p>
-            <p id="p-bloque3">Nuestra meta es que puedas encontrar todos los Mangas y Animes disponibles en internet para que te sean más fáciles de encontrar. También te recomendamos música relacionada</p>
-        </section>
-
-        <section id="bloque-4">
-            <h3 id="p-bloque3">¿Qué es un manga?. Medio</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
-            <p id="p-bloque3">Explicacón</p>
-        </section>
-
-        <section id="bloque-4">
-            <h3 id="p-bloque3">¿Diferencia entre manga, mahua y manwhua?. Derecho</h3>
-            <p id="p-bloque3">Color parecido al Footer, Texto sobre algo Anime o de la página</p>
-            <p id="p-bloque3">Explicación</p>
-        </section>
-    </div>
-
-    <div class="footer">
-        <div>Contacto por GitHub:</div>
-        <div>creada por an4tsu y JohnCVF9</div>
-    </div>
-
 </body>
 </html>
 
