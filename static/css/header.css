@@ -6,6 +6,11 @@
 #h_ingresar {grid-area: ingresar;}
 #h_registrarse {grid-area: registrarse;}
 
+header{
+    top: 0;
+    position: sticky;
+}
+
 .grid-container {
     display: grid;
     height: 15vh;
@@ -17,8 +22,6 @@
     font-family: fonstar;
     background-color:var(--header-bg);
     text-align: center;
-    top: 0;
-    position: sticky;
     z-index: 1000;
 }
 
