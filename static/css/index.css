@@ -9,7 +9,7 @@ body{
 }
 
 /*Encabezado*/
-.header{grid-area: header;}
+.header {grid-area: header;}
 /*Principal*/
 .main {grid-area: main;}
 /*buscador*/
@@ -23,6 +23,45 @@ body{
 .posicionador{grid-area: reel;}
 .contenido{grid-area: contenido;}
   
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        /*6 columnas y 4 filas*/
+        'header header header header header header'
+        'main main main main main buscador'
+        'info info info info info buscador'
+        'footer footer footer footer footer buscador';
+}
+
+.drop_otros{
+    display: inline-block;
+    position: relative;
+    width: 85px;
+}
+.drop_otros_conten{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
+}
+.drop_otros:hover .drop_otros_conten{
+    display: block;
+}
+.drop_otros_conten a{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.drop_otros_conten a:hover{
+    color: #FFFFFF;
+    background-color: #f36fdd;
+}
+
+
+
+
 #inicio{
     background-image: url(../img/fondo.jpg); 
 }
