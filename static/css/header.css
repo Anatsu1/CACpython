@@ -1,8 +1,7 @@
 #icono{grid-area: titulo;}
 #h_home {grid-area: home;}
-#h_inicio {grid-area: inicio;}
 #h_recomendados {grid-area: recomendados;}
-#h_contacto {grid-area: contacto;}
+#h_otros {grid-area: otros;}
 #h_ingresar {grid-area: ingresar;}
 #h_registrarse {grid-area: registrarse;}
 
@@ -10,15 +9,14 @@ header{
     top: 0;
     position: sticky;
 }
-
-.grid-container {
+.head-grid-container {
     display: grid;
-    height: 15vh;
+    height: 7vh;
     align-items: center;
     grid-template-areas:
-        /*6 columnas y 4 filas*/
-        'titulo  titulo  titulo home inicio recomendados contacto ingresar ingresar'
-        'titulo  titulo  titulo home inicio recomendados contacto registrarse registrarse';
+        /*5 columnas y 2 filas*/
+        'titulo  home recomendados otros ingresar ingresar'
+        'titulo  home recomendados otros registrarse registrarse';
     font-family: fonstar;
     background-color:var(--header-bg);
     text-align: center;
@@ -35,6 +33,8 @@ header{
     background-clip: text;
 }
 .hipervin{
+    margin: 0;
+    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
     text-decoration: none;
     color: var(--header-letter);
     
@@ -43,8 +43,34 @@ header{
     color: var(--letter-hover);
 }
 
+.drop_otros{
+    position: relative;
+    width: 85px;
+}
+.drop_otros_conten{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
+    color: var(--header-letter);
+}
+.drop_otros:hover .drop_otros_conten{
+    display: block;
+}
+.drop_otros_conten a{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.drop_otros_conten a:hover{
+    color: var(--letter-hover);
+    background-color: #f36fdd;
+}
+
 @media screen and (max-width: 450px) {
-    .grid-container {
+    .head-grid-container {
         background-color: rgb(41, 40, 40);
         height: 70vh;
         font-size: 1.3rem;
@@ -52,12 +78,12 @@ header{
         grid-template-areas:
             'titulo titulo'
             'home home'
-            'inicio inicio'
             'recomendados recomendados'
+            'otros'
             'contacto contacto'
             'ingresar registrarse';
     }
-    .grid-container #icono{
+    .head-grid-container #icono{
         font-size: 2.3rem;
     }
 }
