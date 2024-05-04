@@ -33,7 +33,6 @@ body{
 
 .grid-container .main{
     margin-left: 5vw;
-    margin-right: 5vw;
     padding: 20px;
     background-color: var(--primary-color);
 }
@@ -42,6 +41,11 @@ body{
     margin-bottom: 20px;
 }
 .grid-container #reel{
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: groove 6px rgb(158, 76, 158);
+
     background-image: url(../img/reel5.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -58,26 +62,29 @@ body{
     padding: 10px 20px 30px 20px;
     color: white;
 }
-#recomendados{
-    background-image: url(../img/fondo.jpg);
-    background-size: 50%;
+#titulo1{
+    padding-bottom: 3px;
+    text-align: center;
+    color: rgb(255, 190, 255);
 }
-#recomendados h1{
-    /* background-color: #000000d8; */
-    color: white;
+#subtitulo{
+    padding-bottom: 3px;
+    text-align: center;
+    color: rgb(255, 190, 255);
 }
-
+#titulo2{
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(255, 190, 255);
+}
 #cartelera{
-    /* background-color: #000000d8; */
     padding-top: 2vh;
     padding-bottom: 2vh;
     display: grid;
-    grid-template-columns: ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
     justify-content: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 .card{
     height: auto;
@@ -85,34 +92,45 @@ body{
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
-    border: outset black;
+    border: groove 6px rgb(158, 76, 158);
     box-sizing: border-box;
 }
-.card h4{
+.card h3{
+    padding: 3px;
     color: white;
 }
+.card h4{
+    padding: 3px;
+    font-weight: lighter;
+}
 .imgresponsive{
+    height: auto;
+    height: 460px;
+    width: 100%;
+    display: block;
     transition: transform 0.3s ease-in-out;
 }
 .imgresponsive:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
-.imgresponsive{
-    height: auto;
-    height: 450px;
-    width: 100%;
-    display: block;
-}
-
-
-
 
 .buscador{
-    width: 100%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 15px;
+    /* margin-left: 0.5vw;
+    margin-right: 0.5vw; */
+    min-width: 100%;
+    /* width: 100%; */
     height: auto;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: aquamarine; /* <<<---Es para probar como queda */
+    /* background-color: var(--primary-color); */
+    color: rgb(255, 190, 255);
 }
+
+
+
+
 .info{
     width: 100%;
     height: auto;
