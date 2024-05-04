@@ -31,17 +31,16 @@ body{
     background-image: url(../img/fondo.jpg)
 }
 
-/* .grid-container .main{
-    background-image: url(../img/fondo.jpg)
-} */
-
-.contenedor{
+.grid-container .main{
     margin-left: 5vw;
     margin-right: 5vw;
     padding: 20px;
     background-color: var(--primary-color);
 }
 
+.contenedor{
+    margin-bottom: 20px;
+}
 .grid-container #reel{
     background-image: url(../img/reel5.jpg);
     background-repeat: no-repeat;
@@ -55,33 +54,31 @@ body{
     animation-delay: 3s;
     animation-iteration-count: infinite;
 }
-
 .contenido{
     padding: 10px 20px 30px 20px;
     color: white;
 }
-
 #recomendados{
     background-image: url(../img/fondo.jpg);
     background-size: 50%;
 }
 #recomendados h1{
-    background-color: #000000d8;
+    /* background-color: #000000d8; */
     color: white;
 }
 
 #cartelera{
-    background-color: #000000d8;
+    /* background-color: #000000d8; */
     padding-top: 2vh;
     padding-bottom: 2vh;
     display: grid;
+    grid-template-columns: ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
     justify-content: center;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
-
 .card{
     height: auto;
     box-shadow: 4px 4px 4px 4px black;
@@ -91,26 +88,24 @@ body{
     border: outset black;
     box-sizing: border-box;
 }
-
 .card h4{
     color: white;
 }
-
 .imgresponsive{
     transition: transform 0.3s ease-in-out;
 }
-
 .imgresponsive:hover{
     transform: scale(1.2);
 }
-
-
 .imgresponsive{
     height: auto;
     height: 450px;
     width: 100%;
     display: block;
 }
+
+
+
 
 .buscador{
     width: 100%;
@@ -127,7 +122,7 @@ body{
 
 .footer{
     width: 100%;
-    height: 6vh;
+    height: 4vh;
     background-color: var(--primary-color);
     color: white;
     text-align: center;
@@ -135,7 +130,7 @@ body{
 
 .footer div{
     display: inline-block;
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-top: 1vh;
 }
 
