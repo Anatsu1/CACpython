@@ -10,3 +10,8 @@
     --header-letter:rgb(255, 190, 255);
     --letter-hover:#60fdbc;
 }
+
+@font-face {
+    font-family: "fonstar";
+    src: url(../../assets/fonts/fonstars/Fonstars-4Bo0p.otf);
+}

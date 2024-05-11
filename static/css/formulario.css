@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+}
+.formContainer{
+    font-family: monospace;
+    font-size: 1.3em;
+    background-color: rgba(136, 102, 168, 0.603);
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
+    color: white;
+    width: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.inputData{
+    padding: 10px;
+    margin: 10px;
+}
+
+.boxHed{
+    grid-column: span 2;
+    text-align: center;
+}
+.boxFunc{
+    grid-column: span 2;
+    cursor: pointer;
+    width: 100px;
+}
+
