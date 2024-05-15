@@ -1,0 +1,90 @@
+
+:root{
+    --bg-color:#1b2021;
+    --bg-secondary-color:#308c7d;
+    --primary-color:#1b2021;
+    --secondary-color:#514e80;
+    --third-color:#8d99ae;
+    --letter-color:#a5f2d9;
+    --body-color:#0a1641;
+    --header-bg:#15003d;
+    --header-letter:rgb(255, 190, 255);
+    --letter-hover:#60fdbc;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-color: var(--body-color);
+}
+
+
+
+#título{
+    font-family: monospace;
+    font-size: 29px;
+    background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
+    
+    text-align:  center;
+    
+    
+}
+
+
+
+
+
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: darkorchid;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: darkslateblue;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
