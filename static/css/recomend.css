@@ -12,8 +12,6 @@ body{
 .main {grid-area: main;}
 /*buscador*/
 .buscador {grid-area: buscador;}
-/*informacion*/
-.info {grid-area: info;}
 /*Pie*/
 .footer {grid-area: footer;}
 /* 
@@ -26,7 +24,6 @@ body{
     grid-template-areas:
         /*6 columnas y 3 filas*/
         'main main main main main buscador'
-        'info info info info info buscador'
         'footer footer footer footer footer footer';
     background-image: url(../img/fondo.jpg)
 }
@@ -40,24 +37,6 @@ body{
 
 .contenedor{
     margin-bottom: 20px;
-}
-.grid-container #reel{
-    text-align: center;
-    border-radius: 20px;
-    overflow: hidden;
-    border: groove 6px rgb(158, 76, 158);
-
-    background-image: url(../img/reel5.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 65vh;
-    border-radius: 10px;
-    
-    animation-name: cambiar;
-    animation-duration: 25s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
 }
 #titulo1{
     padding-bottom: 3px;
@@ -95,8 +74,10 @@ body{
 }
 .imgresponsive{
     height: auto;
-    height: 460px;
     width: 100%;
+    /* width: auto;
+    height: 230px; */
+    height: 460px;
     display: block;
     transition: transform 0.3s ease-in-out;
 }
@@ -131,38 +112,6 @@ body{
     outline: 0px;
     color: rgb(158, 76, 158);
     /* background-color: var(--primary-color); */
-}
-
-.grid-container .info{
-    margin-left: 5vw;
-    padding: 30px; 
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: 60px;
-    justify-content: center;
-    color: white;
-    background-color: rgb(13, 6, 44);
-    /* background-color: var(--third-color); */
-}
-#b-info{
-    height: auto;
-    box-shadow: 4px 4px 4px 4px black;
-    text-align: center;
-    border-radius: 33px;
-    overflow: hidden;
-    border: groove 6px rgb(158, 76, 158);
-    box-sizing: border-box;
-    background-color: var(--third-color);
-}
-#b-info h3{
-    padding: 6px;
-}
-#p-i{
-    padding: 3px;
 }
 
 .footer{
