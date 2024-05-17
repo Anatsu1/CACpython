@@ -95,7 +95,7 @@ body{
 }
 .imgresponsive{
     height: auto;
-    height: 460px;
+    height: 360px;
     width: 100%;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -164,21 +164,6 @@ body{
 #p-i{
     padding: 3px;
 }
-
-.footer{
-    width: 100%;
-    height: 4vh;
-    background-color: var(--primary-color);
-    color: rgb(255, 190, 255);
-    text-align: center;
-}
-.footer div{
-    display: inline-block;
-    margin-left: 1vw;
-    margin-top: 1vh;
-}
-
-
 
 @media screen and (max-width:750px){
     #cartelera{

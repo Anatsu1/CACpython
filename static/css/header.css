@@ -9,10 +9,11 @@
 header{
     top: 0;
     position: sticky;
+    z-index: 1000;
 }
 .head-grid-container {
     display: grid;
-    height: 9vh;
+    height: 70px;
     align-items: center;
     grid-template-areas:
         /*6 columnas y 2 filas*/
@@ -21,7 +22,6 @@ header{
     font-family: fonstar;
     background-color:var(--header-bg);
     text-align: center;
-    z-index: 1000;
 }
 
 #icono {
@@ -52,8 +52,10 @@ header{
     /* width: 85px; */
     width: auto;
     position: relative;
+    z-index: 1000;
 }
 .drop_otros_conten{
+    background-color:var(--header-bg);
     display: none;
     position: absolute;
     width: 100%;

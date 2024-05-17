@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="contacto.css">
-    <!--Icon-Font-->
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/colors.css">
+    <link rel="stylesheet" href="../static/css/formulario.css">
+    <link rel="stylesheet" href="../static/css/contacto.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header>
-        <div>
-            <img id="Logo" src="./static/img/chica-anime.png" alt="Logo">
+        <div class="head-grid-container">
+            <h2 id="icono">Manarem</h2>
+            <a class="hipervin"  id="h_home" href="../index.html">Home</a>
+            <a class="hipervin"  id="h_recomendados" href="recomend.html">Recomendados</a>
+            <a class="hipervin"  id="h_musica" href="musica.html">Musica</a>
+            <div class="drop_otros">
+                <div class="hipervin" id="h_otros">Otros</div>
+                <div class="drop_otros_conten">
+                    <a class="hipervin" href="acerca_de.html">Acerca de</a>
+                    <a class="hipervin" href="contacto.html">Contacto</a>
+                    <a class="hipervin" href="preg_frec.html">Preguntas Frecuentes</a>
+                    <a class="hipervin" href="feedback.html">Opiniones</a>
+                </div>
+            </div> 
+            <a class="hipervin"  id="h_ingresar" href="ingresar.html">Ingresar</a>
+            <a class="hipervin"  id="h_registrarse" href="registrarse.html">Registrarse</a>
         </div>
     </header>
-    <div class="container-form">
-        <div class="info-form">
-            <h2>Contáctanos</h2>
-            <p>Si eres un otaku fanático del mundo anime, estás en el sitio adecuado, te esperamos. Tu tomodachi.</p>
-            <a href="#"><i class="fa fa-phone"></i> 11-733-456</a>
-            <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
-            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Argentina</a>
+    <section class="container">
+        <div class="formContainer">
+            <div class="info-form">
+                <h2>Contáctanos</h2>
+                <p>Si eres un otaku fanático del mundo anime, estás en el sitio adecuado, te esperamos. Tu tomodachi.</p>
+                <a href="#"><i class="fa fa-phone"></i> 11-733-456</a>
+                <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
+                <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Argentina</a>
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+                <input type="emal" name="email" placeholder="Tu Email" class="campo">
+                <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
         </div>
-        <form action="#" autocomplete="off">
-            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
-            <input type="emal" name="email" placeholder="Tu Email" class="campo">
-            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
-            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
-        </form>
-    </div>
+    </section>
+    <footer class="footer">
+        <div>Contacto por GitHub:</div>
+        <div>creada por an4tsu, JohnCVF9 y Quiroz-Monica-R</div>
+    </footer>
 </body>
 </html>
