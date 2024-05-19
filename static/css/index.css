@@ -133,7 +133,7 @@ body{
     /* background-color: var(--primary-color); */
 }
 
-.grid-container .info{
+.grid-container #info{
     margin-left: 5vw;
     padding: 30px; 
     padding-top: 2vh;
@@ -157,9 +157,10 @@ body{
     border: groove 6px rgb(158, 76, 158);
     box-sizing: border-box;
     background-color: var(--third-color);
+    padding: 13px 0px 13px 0px;
 }
 .b-info h3{
-    padding: 6px;
+    padding-bottom: 6px;
 }
 .p-i{
     padding: 3px;
