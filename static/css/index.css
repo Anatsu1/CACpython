@@ -13,7 +13,7 @@ body{
 /*buscador*/
 .buscador {grid-area: buscador;}
 /*informacion*/
-.info {grid-area: info;}
+#info {grid-area: info;}
 /*Pie*/
 .footer {grid-area: footer;}
 /* 
@@ -148,7 +148,7 @@ body{
     background-color: rgb(13, 6, 44);
     /* background-color: var(--third-color); */
 }
-#b-info{
+.b-info{
     height: auto;
     box-shadow: 4px 4px 4px 4px black;
     text-align: center;
@@ -158,10 +158,10 @@ body{
     box-sizing: border-box;
     background-color: var(--third-color);
 }
-#b-info h3{
+.b-info h3{
     padding: 6px;
 }
-#p-i{
+.p-i{
     padding: 3px;
 }
 
