@@ -178,6 +178,8 @@ body{
     #cartelera{
         grid-template-columns: 1fr;
     }
+    
+    
 }
 @keyframes cambiar{
     0%{background-image: url(../img/reel1.jpg);}
