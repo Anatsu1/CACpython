@@ -76,7 +76,26 @@ header{
     background-color: #f36fdd;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-widht: 425px) and (max-width: 768px) {
+    .head-grid-container {
+        background-color: rgb(41, 40, 40);
+        height: 70vh;
+        font-size: 30pc;
+        border: solid 1px white;
+        grid-template-areas:
+            'titulo titulo'
+            'home home'
+            'recomendados recomendados'
+            'musica'
+            'otros'
+            'contacto contacto'
+            'ingresar registrarse';
+    }
+    #icono{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
     .head-grid-container {
         background-color: rgb(41, 40, 40);
         height: 70vh;
