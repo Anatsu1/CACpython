@@ -77,9 +77,10 @@ header{
 
 @media screen and (min-widht: 425px) and (max-width: 768px) {
     .head-grid-container {
-        background-color: rgb(41, 40, 40);
         height: 6.6vh;
-        border: solid 1px white;
+        font-size: 0.9rem;
+        padding-bottom: 4px;
+        align-items: center;
         grid-template-areas:
             'titulo titulo'
             'home home'
@@ -88,16 +89,26 @@ header{
             'otros'
             'contacto contacto'
             'ingresar registrarse';
+            font-family: fonstar;
+            background-color:var(--header-bg);
+            text-align: center;
     }
     #icono{
-        font-size: 1.2rem;
+        font-size: 0.6rem;
+        color: transparent;
+        text-align: center;
+        background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-clip: text;
     }
 }
 @media screen and (max-width: 425px) {
     .head-grid-container {
-        background-color: rgb(41, 40, 40);
         height: 6.6vh;
-        border: solid 1px white;
+        font-size: 0.2rem;
+        padding-bottom: 4px;
+        align-items: center;
         grid-template-areas:
             'titulo titulo'
             'home home'
@@ -106,9 +117,18 @@ header{
             'otros'
             'contacto contacto'
             'ingresar registrarse';
+            font-family: fonstar;
+            background-color:var(--header-bg);
+            text-align: center;
     }
-    .head-grid-container #icono{
-        font-size: 1.2rem;
+    #icono{
+        font-size: 0.2rem;
+        color: transparent;
+        text-align: center;
+        background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-clip: text;
     }
 }
 /*.head-grid-container {
