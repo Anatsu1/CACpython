@@ -13,7 +13,8 @@ header{
 }
 .head-grid-container {
     display: grid;
-    height: 70px;
+    height: 6.6vh;
+    padding-bottom: 4px;
     align-items: center;
     grid-template-areas:
         /*6 columnas y 2 filas*/
@@ -25,7 +26,7 @@ header{
 }
 
 #icono {
-    font-size: 29px;
+    font-size: 2.4rem;
     color: transparent;
     text-align: center;
     background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
@@ -41,15 +42,14 @@ header{
 .hipervin:hover{
     color: var(--letter-hover);
 }
-#h_ingresar, #h_registrarse{
-    margin: 0px 3px 6px 0px;
+#h_registrarse{
+    margin: -10px 0px 0px 0px;
 }
 
 .drop_otros{
-    margin-top: 3.1vh;
+    padding-top: 1.8vh;
     text-align: center;
     align-items: center;
-    /* width: 85px; */
     width: auto;
     position: relative;
     z-index: 1000;
@@ -59,7 +59,6 @@ header{
     display: none;
     position: absolute;
     width: 100%;
-    /* overflow: auto; */
     box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
     color: var(--header-letter);
 }
@@ -79,8 +78,7 @@ header{
 @media screen and (min-widht: 425px) and (max-width: 768px) {
     .head-grid-container {
         background-color: rgb(41, 40, 40);
-        height: 70vh;
-        font-size: 30pc;
+        height: 6.6vh;
         border: solid 1px white;
         grid-template-areas:
             'titulo titulo'
@@ -92,14 +90,13 @@ header{
             'ingresar registrarse';
     }
     #icono{
-        font-size: 10px;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 425px) {
     .head-grid-container {
         background-color: rgb(41, 40, 40);
-        height: 70vh;
-        font-size: 1.2rem;
+        height: 6.6vh;
         border: solid 1px white;
         grid-template-areas:
             'titulo titulo'
@@ -111,6 +108,56 @@ header{
             'ingresar registrarse';
     }
     .head-grid-container #icono{
-        font-size: 2.3rem;
+        font-size: 1.2rem;
     }
 }
+/*.head-grid-container {
+    display: grid;
+    height: 6.6vh;
+    padding-bottom: 4px;
+    align-items: center;
+    grid-template-areas:
+        'titulo home recomendados musica otros ingresar ingresar'
+        'titulo home recomendados musica otros registrarse registrarse';
+    font-family: fonstar;
+    background-color:var(--header-bg);
+    text-align: center;
+}
+
+#icono {
+    font-size: 2.4rem;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+}
+.hipervin{
+    text-decoration: none;
+    color: var(--header-letter);
+    
+}
+.hipervin:hover{
+    color: var(--letter-hover);
+}
+#h_registrarse{
+    margin: -10px 0px 0px 0px;
+}
+
+.drop_otros{
+    padding-top: 1.8vh;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    z-index: 1000;
+}
+.drop_otros_conten{
+    background-color:var(--header-bg);
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
+    color: var(--header-letter);
+}*/

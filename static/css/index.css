@@ -166,7 +166,7 @@ body{
     padding: 3px;
 }
 
-@media screen and (max-width:750px){
+@media screen and (min-widht: 425px) and (max-width: 768px){
     #cartelera{
         grid-template-columns: 1fr 1fr;
     }
