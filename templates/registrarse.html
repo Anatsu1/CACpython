@@ -33,15 +33,16 @@
     </header>
     <section class="container">
         <div>
-            <form action="#" class="formContainer">
+            <form class="formContainer" id="formulario">
                 <h3 class="boxHed">Registrarse</h3>
-                <label>Nombre completo</label><input type="text" class="inputData">
-                <label>Usuario</label><input type="text" class="inputData">
-                <label>Email</label><input type="text" class="inputData">
-                <label>Imagen</label><input type="file" class="inputData">
-                <label>Contraseña</label><input type="password" class="inputData">
-                <label>Repetir Contraseña</label><input type="password" class="inputData">
-                <input type="submit" value="ENVIAR" class="boxFunc btn-enviar">
+                <div>Nombre<li id="caracteres-Nombre">Caracteres permitidos: a-z/A-Z</li><li id="formulario__input-Nombre"></li></div><input type="text" class="inputData" id="Nombre" name="Nombre" placeholder="Tu Nombre">
+                <div>Usuario<li id="caracteres-Usuario">Caracteres permitidos: a-z/A-Z/_/-</li><li id="formulario__input-Usuario"></li></div><input type="text" class="inputData" id="Usuario" name="Usuario" placeholder="Tu Usuario">
+                <div>Email<li id="caracteres-Email">Caracteres permitidos: a-z/A-Z/@/.</li><li id="formulario__input-Email"></li></div><input type="text" class="inputData" id="Email" name="Email" placeholder="Tu Email">
+                <div>Imagen<li id="formulario__input-Imagen">(opcional)</li></div><input type="file" class="inputData" value="">
+                <div>Contraseña<li id="caracteres-password">Caracteres permitidos: Cualquiera</li><li id="formulario__input-password"></li></div><input type="password" class="inputData" id="password" name="password" placeholder="Tu Contraseña">
+                <div>Repetir Contraseña<li id="formulario__input-password2"></li></div><input type="password" class="inputData" id="password2" name="password2" placeholder="Repetir(Contraseña)">
+                <label>Aceptar términos y condiciones</label><input type="checkbox" class="inputData" id="terminos">
+                <buttom onclick="comprobar()" class="boxFunc btn-enviar">ENVIAR</buttom>
             </form>
         </div>
     </section>
@@ -49,5 +50,6 @@
         <div>Contacto por GitHub:</div>
         <div>creada por an4tsu, JohnCVF9 y Quiroz-Monica-R</div>
     </footer>
+    <script src="../static/js/formularioRegistro.js"></script>
 </body>
 </html>
