@@ -2,7 +2,7 @@
 #h_home {grid-area: home;}
 #h_recomendados {grid-area: recomendados;}
 #h_musica {grid-area: musica;}
-#h_otros {grid-area: otros;}
+#h_divotros {grid-area: otros;}
 #h_ingresar {grid-area: ingresar;}
 #h_registrarse {grid-area: registrarse;}
 
@@ -42,12 +42,8 @@ header{
 .hipervin:hover{
     color: var(--letter-hover);
 }
-#h_registrarse{
-    margin: -10px 0px 0px 0px;
-}
 
 .drop_otros{
-    padding-top: 1.8vh;
     text-align: center;
     align-items: center;
     width: auto;
@@ -75,109 +71,39 @@ header{
     background-color: #f36fdd;
 }
 
-@media screen and (min-widht: 425px) and (max-width: 768px) {
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    header{
+        position: static;
+    }
     .head-grid-container {
-        height: 6.6vh;
-        font-size: 0.9rem;
-        padding-bottom: 4px;
-        align-items: center;
         grid-template-areas:
-            'titulo titulo'
-            'home home'
-            'recomendados recomendados'
-            'musica'
-            'otros'
-            'contacto contacto'
-            'ingresar registrarse';
-            font-family: fonstar;
-            background-color:var(--header-bg);
-            text-align: center;
+            'titulo titulo titulo'
+            'home recomendados musica'
+            'ingresar registrarse otros';
+        height: auto;
+        padding: 10px;
+        gap: 15px;
     }
     #icono{
-        font-size: 0.6rem;
-        color: transparent;
-        text-align: center;
-        background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-clip: text;
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
+    header{
+        position:static;
+    }
     .head-grid-container {
-        height: 6.6vh;
-        font-size: 0.2rem;
-        padding-bottom: 4px;
-        align-items: center;
         grid-template-areas:
             'titulo titulo'
-            'home home'
-            'recomendados recomendados'
-            'musica'
-            'otros'
-            'contacto contacto'
-            'ingresar registrarse';
-            font-family: fonstar;
-            background-color:var(--header-bg);
-            text-align: center;
+            'home recomendados'
+            'ingresar musica'
+            'registrarse otros';
+        height: auto;
+        padding: 10px;
+        gap: 15px;
     }
     #icono{
-        font-size: 0.2rem;
-        color: transparent;
-        text-align: center;
-        background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-clip: text;
+        font-size: 1.8rem;
     }
 }
-/*.head-grid-container {
-    display: grid;
-    height: 6.6vh;
-    padding-bottom: 4px;
-    align-items: center;
-    grid-template-areas:
-        'titulo home recomendados musica otros ingresar ingresar'
-        'titulo home recomendados musica otros registrarse registrarse';
-    font-family: fonstar;
-    background-color:var(--header-bg);
-    text-align: center;
-}
-
-#icono {
-    font-size: 2.4rem;
-    color: transparent;
-    text-align: center;
-    background: linear-gradient(to right,var(--header-letter),var(--letter-hover),white);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: text;
-}
-.hipervin{
-    text-decoration: none;
-    color: var(--header-letter);
-    
-}
-.hipervin:hover{
-    color: var(--letter-hover);
-}
-#h_registrarse{
-    margin: -10px 0px 0px 0px;
-}
-
-.drop_otros{
-    padding-top: 1.8vh;
-    text-align: center;
-    align-items: center;
-    width: auto;
-    position: relative;
-    z-index: 1000;
-}
-.drop_otros_conten{
-    background-color:var(--header-bg);
-    display: none;
-    position: absolute;
-    width: 100%;
-    box-shadow: 0px 10px 10px 0px rgba(179, 4, 135, 0.4);
-    color: var(--header-letter);
-}*/
