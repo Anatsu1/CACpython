@@ -83,6 +83,7 @@ header{
             'recomendados otros registrarse';
         height: auto;
         gap: 15px;
+
     }
     #icono{
         font-size: 2rem;
@@ -97,6 +98,7 @@ header{
             'registrarse otros';
         height: auto;
         gap: 15px;
+        font-size: 0.6rem;
     }
     #icono{
         font-size: 1.8rem;
