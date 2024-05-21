@@ -22,9 +22,6 @@
     padding: 10px;
 }
 
-@media screen and (min-widht: 450px) and (max-width: 768px) {
-    .footer{}
-}
 @media screen and (max-width: 450px) {
     .footer{
         grid-template-columns: 1fr;
