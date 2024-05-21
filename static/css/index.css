@@ -92,6 +92,7 @@ body{
     border: groove 6px rgb(158, 76, 158);
     box-sizing: border-box;
     margin-bottom: 60px;
+    color: white;
 }
 .imgresponsive{
     height: auto;
@@ -105,7 +106,6 @@ body{
 }
 .card h3{
     padding: 3px;
-    color: rgb(255, 190, 255)
 }
 .card h4{
     padding: 3px;
@@ -169,8 +169,13 @@ body{
     padding: 3px;
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    #cartelera{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
-@media only screen and (min-width: 450px) and (max-width: 768px){
+@media only screen and (min-width: 520px) and (max-width: 900px){
     .contenedor{
         margin: 0px;
     }
@@ -184,7 +189,7 @@ body{
         visibility: hidden;
     }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:520px){
     .contenedor{
         margin: 0px;
     }
@@ -194,7 +199,9 @@ body{
     #info{
         grid-template-columns: 1fr;
     }
-    
+    .campo-buscar{
+        visibility: hidden;
+    }
 }
 @keyframes cambiar{
     0%{background-image: url(../img/reel1.jpg);}

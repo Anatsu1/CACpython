@@ -13,8 +13,8 @@ header{
 }
 .head-grid-container {
     display: grid;
-    height: 6.6vh;
-    padding-bottom: 4px;
+    height: 50px;
+    padding: 10px;
     align-items: center;
     grid-template-areas:
         /*6 columnas y 2 filas*/
@@ -72,27 +72,23 @@ header{
 }
 
 
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+@media only screen and (min-width: 520px) and (max-width: 900px) {
     header{
         position: static;
     }
     .head-grid-container {
         grid-template-areas:
             'titulo titulo titulo'
-            'home recomendados musica'
-            'ingresar registrarse otros';
+            'home musica ingresar'
+            'recomendados otros registrarse';
         height: auto;
-        padding: 10px;
         gap: 15px;
     }
     #icono{
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 450px) {
-    header{
-        position:static;
-    }
+@media screen and (max-width: 520px) {
     .head-grid-container {
         grid-template-areas:
             'titulo titulo'
@@ -100,7 +96,6 @@ header{
             'ingresar musica'
             'registrarse otros';
         height: auto;
-        padding: 10px;
         gap: 15px;
     }
     #icono{
