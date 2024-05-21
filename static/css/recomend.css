@@ -82,6 +82,9 @@ body{
     padding: 3px;
     font-weight: lighter;
 }
+.Links_Sitios{
+    color: rgb(255, 190, 255)
+}
 
 .grid-container .buscador{
     width: 100%;

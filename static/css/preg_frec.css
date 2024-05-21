@@ -4,6 +4,21 @@
     box-sizing: border-box;
     
 }
+body{
+    font-family: "alkatra";
+    background-color:var(--body-color);
+}
+
+/*Principal*/
+.main {grid-area: main;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        /*6 columnas y 3 filas*/
+        'main main main main main buscador';
+    /* background-image: url(../img/fondo.jpg) */
+}
 
 .container{
     height: 85vh;

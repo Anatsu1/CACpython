@@ -12,12 +12,6 @@ body{
 .main {grid-area: main;}
 /*buscador*/
 .buscador {grid-area: buscador;}
-/*Pie*/
-.footer {grid-area: footer;}
-/* 
-.espaciador{grid-area: espaciador;}
-.posicionador{grid-area: reel;}
-.contenido{grid-area: contenido;} */
   
 .grid-container {
     display: grid;
