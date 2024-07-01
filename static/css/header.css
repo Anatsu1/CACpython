@@ -2,6 +2,7 @@
 #h_home {grid-area: home;}
 #h_recomendados {grid-area: recomendados;}
 #h_musica {grid-area: musica;}
+#h_productos {grid-area: productos;}
 #h_divotros {grid-area: otros;}
 #h_ingresar {grid-area: ingresar;}
 #h_registrarse {grid-area: registrarse;}
