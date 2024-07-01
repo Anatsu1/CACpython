@@ -19,8 +19,8 @@ header{
     align-items: center;
     grid-template-areas:
         /*6 columnas y 2 filas*/
-        'titulo home recomendados musica otros ingresar ingresar'
-        'titulo home recomendados musica otros registrarse registrarse';
+        'titulo home recomendados musica productos otros ingresar ingresar'
+        'titulo home recomendados musica productos otros registrarse registrarse';
     font-family: fonstar;
     background-color:var(--header-bg);
     text-align: center;
